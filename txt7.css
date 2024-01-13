@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #EAE2D2;    
+}  
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(177,173,173);
+} 
+.logo{
+    width: 80px;height: 40px;
+}  
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+}
+header{
+    position: fixed;width: 100%;top:0;z-index: 1000;left: 0;
+     display: flex;align-items: center;justify-content: space-between;margin: 0 ;padding: 20px 0;}
+ .header_logo{
+        font-weight: 700;
+    }
+.header_menu{
+        display: flex;font-family: 'Roboto', sans-serif;
+    }
+.header_menu a{
+        margin-left: 20px;padding-bottom: 3px;position: relative;
+    }
+.header_menu a::after{
+        position: absolute;left: 0;bottom: -2px;content: "";height: 1px;width: 0%;background-color: black;
+        transition: 0.5s ease-out;
+    }
+    .header_menu a:hover::after{
+        width: 100%;
+    }
+
+    .header_buttons a{
+        margin-right: 20px;
+    }
+    .header_buttons a:last-child{
+        border: 1px solid black;padding: 10px 20px;transition: 0.5s;
+    }
+    .header_buttons a:last-child:hover{
+        background-color: black;color: white;
+    }
+    header.sticky{
+        
+        background-color:#EAE2D2 ; 
+        padding: 20px 10%;box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    }
+    .lista a{
+        color: black;transition:  all .42s ease;
+    }
+    .lista a:hover{
+        color: rgb(155, 98, 23);
+    } 
+    .woman{
+        position: fixed;top:-100%;left: 0;width: 100%;
+        height: 400px;z-index: 1000;background-color:#EAE2D2 ;
+        padding: 8rem 1.5rem;backdrop-filter: blur(16px);
+        transition: top .4s;
+    }
+    .woman__close{
+        right: 49%;
+        top: 100px;
+        position: absolute;font-size: 2rem;
+        color: black;cursor: pointer;
+    }
+    .show-woman{
+        top: 0;
+    }
+    .search{
+        position: fixed;
+        top: -100%;left: 0;width: 100%;
+        height: 400px;z-index: 1000;background-color:#EAE2D2 ;
+        padding: 8rem 1.5rem;backdrop-filter: blur(16px);
+        transition: top .4s;
+    }
+    .search__form{
+       margin-top: 100px;
+       display: flex;align-items: center;column-gap: .5rem;
+       background-color:#EAE2D2 ; border: 2px solid #EAE2D2;
+       padding-inline:1rem ;
+    }
+    .search__icon{
+        font-size: 1.25rem;color: black;
+    }
+    .search__input{
+        width: 100%;padding-block: 1rem;background-color:#EAE2D2 ;
+        color: black;
+    }
+    .search__close{
+        right: 49%;
+        top: 100px;
+        position: absolute;font-size: 2rem;
+        color: black;cursor: pointer;
+    }
+    .show-search{
+        top: 0;
+    }
+      /* .login{
+          position: absolute;  
+           top: -100%;   
+        left: 0;width: 100%;height: 100%;
+          z-index:100;  
+        background-color:#EAE2D2 ;
+        backdrop-filter: blur(16px);align-items: center;
+        padding: 1.5rem;text-align: center;transition: top .4s;
+    }   
+    .login__form{
+        margin-top: 150px;margin-left: auto;margin-right: auto;
+        width: 30%;display: flex;flex-direction: column;
+        background-color:#EAE2D2 ;padding: 2rem 1.5rem;
+        border:  2px solid black;row-gap: 1.25rem;
+    }
+    .login__title{
+        font-size:20px ;
+    }
+    .login__group{
+        row-gap: 1.25rem;
+    }
+    .login__label{
+        display: block;text-align: initial;color: black;font-weight: var(--font-medium);
+        margin-bottom: .25rem;
+    }
+    .login__input{
+        width: 100%;background-color: #EAE2D2 ;
+        border: 2px solid black;padding: 1rem;color: black;
+    }
+    .login__signup,
+.login__forgot{
+    display: block;
+     font-size: var(--small-font-size); 
+} 
+ .login__signup{
+    margin-bottom: .5rem;
+     font-size: 11px; 
+}
+.login__signup a{
+    color:black ;
+   
+    font-size: 15px;text-decoration: underline; 
+    
+}
+.login__forgot{
+    color: black;margin-bottom: 1.25rem;font-size: 10px;margin-top: 5px;
+}
+.login__close{
+    right: 49%;
+    top: 100px;
+    position: absolute;font-size: 2rem;
+    color: black;cursor: pointer;
+}
+
+.login__button:hover{
+    transform: scale(1.06);
+   box-shadow: 0 4px 32px  ; 
+ } */
+/* .show-login{
+    top: 0; 
+ }   */
+
+    .footer-list{
+        display: flex; flex-direction: column;align-items: center;
+    }
+    .footer-list-title{
+        font-size: 20px;margin-block-end: 30px;
+    }
+    .input-field{
+        background-color: white;box-shadow: 2;padding: 10px 15px;
+        border: 2px solid black;margin-block-end: 25px;outline: none;
+        transition: 1;
+    }
+    .input-field:focus{
+        box-shadow: none;
+    }
+    
+     .footer-list .btn{
+        font-size: 1rem;padding-inline: 40px;
+    } 
+    .contact{
+        margin-top:  100px; ;
+    }
+    .contact-info p{
+        color: #565656;font-size: 14px;font-weight: 400;
+        text-transform: capitalize;line-height: 1.5;
+        margin-bottom: 10px;
+        cursor: pointer;transition: all .42s;
+    }
+    .contact-info p:hover{
+        color: rgb(155, 98, 23);
+    }
+    .contact-info{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,
+        minmax(160px,auto));
+        justify-content: center;
+        gap: 30px;
+        
+        
+    }
+    .contact-info h4{
+        color: black;
+        font-size: 14px;
+        text-transform: uppercase;margin-bottom: 10px;
+    }
+    
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:100px ;
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    .second-info  {
+         font-size: 10px;
+    }
+    .third-info  {
+        font-size: 10px;
+    }
+    .fourth-info  {
+        font-size: 10px;
+    }
+ 
+  .payment{
+    margin-top: 200px;
+    left: 0;height: 100%;
+    align-items: center;
+    padding: 1.5rem;text-align: center;
+    margin-left: auto;margin-right: auto;
+    width: 30%;display: flex;flex-direction: column;
+    background-color:#EAE2D2 ;padding: 2rem 1.5rem;
+    border:  2px solid black;row-gap: 1.25rem;
+    
+  }
+  
+  .payment h2{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+   
+  }
+  
+  .form .label{
+    display: block;
+    color: #555555;
+    margin-bottom: 6px;
+  }
+  
+  .input{
+    background-color: #EAE2D2 ;
+    padding: 13px 0px 13px 25px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .card-grp{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-item{
+    width: 48%;
+  }
+  
+  .space{
+    margin-bottom: 20px;
+  }
+  
+   .icon-relative{
+    position: relative;
+  } 
+  
+  .icon-relative .fas,
+  .icon-relative .far{
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: #555555;
+  }
+ button{
+    cursor: pointer;display: flex;align-items: center;justify-content: center;
+    border: 0;padding: 8px 15px;background-color: black;
+    color: white;text-transform: uppercase;transition: 0.2 ease-out;
+   
+    
+}
+button span{
+    font-size: 15px;width: 100%;text-align: center;
+}
+button:hover{
+    transform: scale(1.06);
+}    
+.valid:hover{
+    transform: scale(1.06);
+} 
+.valid{
+    cursor: pointer;display: flex;align-items: center;justify-content: center;
+    border: 0;padding: 8px 15px;background-color: black;
+    color: white;text-transform: uppercase;transition: 0.2 ease-out;
+     width: 350px; 
+}
+
